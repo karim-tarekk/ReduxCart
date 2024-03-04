@@ -5,7 +5,7 @@ export const fetchCartData = () => {
   return async (dispatch) => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://cart-handler-9f47c-default-rtdb.europe-west1.firebasedatabase.app/cart.json"
+        " -- " // Put your firebase realtime database link here
       );
 
       if (!response.ok) {
@@ -49,7 +49,7 @@ export const sendCartData = (cart) => {
 
     const sendRequest = async () => {
       const response = await fetch(
-        "https://cart-handler-9f47c-default-rtdb.europe-west1.firebasedatabase.app/cart.json",
+        " -- ", // Put your firebase realtime database link here
         {
           method: "PUT",
           body: JSON.stringify({
